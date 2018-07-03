@@ -28,8 +28,17 @@ $(function () {
             dataType: 'json',
             success: function (info) {
                 console.log(info);
+
+                var arr = info.result
+
+                arr.forEach(function (v, i) {
+                    var text = v.productComCount
+                    text = text.slice(1, 2)
+                    v.productComCount = text
+                })
+
                 $('.mm_forFree ul').html(template('freeList', {
-                    rows: info.result
+                    rows: arr
                 }))
             }
         })

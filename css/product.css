@@ -16,6 +16,10 @@ p {
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  height: 100%;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -23,6 +27,7 @@ p {
   min-width: 350px;
   margin: 0 auto;
   font-size: 12px;
+  position: relative;
   /* 头部开始 */
   /* 底部开始 */
 }
@@ -159,9 +164,13 @@ p {
 }
 .mm_product .productNav {
   height: .75rem;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
+  border-top: .02rem solid #ccc;
+  border-bottom: .02rem solid #ccc;
   position: relative;
+}
+.mm_product .productNav ul {
+  width: 100%;
+  float: left;
 }
 .mm_product .productNav ul li {
   height: 100%;
@@ -190,7 +199,11 @@ p {
   font-weight: bold;
   box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
 }
+.mm_product .productInfo ul {
+  width: 100%;
+}
 .mm_product .productInfo ul li {
+  width: 100%;
   height: 2.35rem;
 }
 .mm_product .productInfo ul li a {

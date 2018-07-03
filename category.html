@@ -88,9 +88,7 @@
             <a class="categoryBtn mui-navigate-right" data-id="{{ v.titleId }}" href="#">{{ v.title }}</a>
             <div class="category mui-collapse-content">
                 <ul>
-                    <li>
-                        <a href="">111</a>
-                    </li>
+                    <!-- 动态渲染 -->
                 </ul>
             </div>
         </li>
@@ -101,7 +99,7 @@
     <script type="text/html" id="categoryList">
         {{ each rows as v i }}
         <li>
-            <a href="" data-id="{{ v.categoryId }}">{{ v.category }}</a>
+            <a class="cate" href="./product.html?categoryId={{ v.categoryId }}" data-id="{{ v.categoryId }}">{{ v.category }}</a>
         </li>
         {{ /each }}
     </script>
