@@ -1,0 +1,33 @@
+@import './common.less';
+// @grayColor: #F1F1F1;
+.container {
+    .mm_category {
+        >ul {
+            >li {
+                width: 100%;
+                background-color: #EDEDED;
+                a {
+                    font-size: 0.3rem;
+                }
+                .category {
+                    padding: 0;
+                    ul {
+                        li {
+                            display: block;
+                            width: 33.33%;
+                            height: 0.8rem;
+                            float: left;
+                            border-right: 1px solid @grayColor;
+                            border-bottom: 1px solid @grayColor;
+                            a {
+                                display: block;
+                                line-height: 0.8rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
