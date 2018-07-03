@@ -1,12 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>买买买</title>
 </head>
+
 <body>
-    主页测试
+    <div class="container">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 头部 -->
+                <div class="mm_header">
+                    <a href="#" class="mm_logo">
+                        <img src="./images/header_logo.png" alt="加载失败" title="慢慢卖">
+                    </a>
+                    <a href="#" class="mm_download">
+                        <img src="./images/header_app.png" alt="加载失败" title="下载">
+                    </a>
+
+                    <div class="mm_search">
+                        <input type="text" name="searchContent" placeholder="请输入搜索内容">
+                        <a href="#" class="search_btn">搜索</a>
+                    </div>
+                </div>
+
+                <!-- 导航 -->
+                <div class="mm_nav">
+                    <ul class="mui-clearfix">
+                        <!-- 动态渲染 -->
+                    </ul>
+                </div>
+
+                <!-- 折扣商品 -->
+                <div class="mm_forFree">
+                    <div class="freeTitle">
+                        <span>超值折扣推荐</span>
+                        <a href="">
+                            <img src="./images/more.png" alt="">
+                        </a>
+                    </div>
+                    <div class="freeItems">
+                        <ul>
+                            <!-- 动态渲染 -->
+                        </ul>
+                    </div>
+                    <div class="moreInfo">
+                        <a href="#">更多优惠信息>></a>
+                    </div>
+                </div>
+
+                <!-- 底部 -->
+                <div class="mm_footer">
+                    <div class="f_title">
+                        <span>品牌排行</span>
+                        <a href="">
+                            <img src="./images/more.png" alt="">
+                        </a>
+                    </div>
+                    <div class="f_nav">
+                        <ul class="mui-clearfix">
+                            <li>
+                                <a href="javascript:;">登录</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">注册</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="backTop">
+                                    <img src="./images/top.jpg" alt=""> 返回顶部
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f_link">
+                        <p>
+                            <span>手机app下载</span>
+                            <span>慢慢买手机版</span>
+                            --掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+
+    <!-- 导航模板 -->
+    <script type="text/html" id="navList">
+        {{ each rows as v i }} {{ if (i>7) }}
+        <li class="hide">
+            {{ else }}
+            <li>
+                {{ /if }}
+                <a href="{{ v.titlehref }}" data-id="{{ v.indexmenuId }}">
+                    {{ #v.img }}
+                    <p>{{ v.name }}</p>
+                </a>
+            </li>
+            {{ /each }}
+    </script>
+
+    <!-- 折扣模板 -->
+    <script type="text/html" id="freeList">
+        {{ each rows as v i }}
+        <li>
+            <a class="mui-clearfix" href="">
+                <div class="itemImg">
+                    {{ #v.productImg2 }}
+                </div>
+                <div class="itemInfo">
+                    <p>{{ v.productName }}
+                        <span>{{ v.productPinkage }}</span>
+                    </p>
+                    <p>
+                        <span>{{ v.productFrom }}</span>
+                        <span>|</span>
+                        <span>{{ v.productTime }}</span>
+                        <span class="freeR">{{ v.productComCount }}</span>
+                    </p>
+                    <!-- <a href="#">link11</a> -->
+                </div>
+            </a>
+        </li>
+        {{ /each }}
+    </script>
 </body>
+
 </html>
