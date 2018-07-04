@@ -1,1 +1,165 @@
 @import './common.less';
+.container {
+    .mm_header {
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_content {
+        width: 100%;
+        padding: 0.2rem;
+        background-color: #fff;
+        .pro_title {
+            width: 100%;
+            margin-top: 0.1rem;
+            font-size: 0.4rem;
+            text-align: left;
+            line-height: 1.2em;
+        }
+        .pro_flag {
+            margin-top: 0.2rem;
+            height: 0.24rem;
+            color: #ccc;
+        }
+        .pro_textImg {
+            margin-top: 0.2rem;
+            .img {
+                float: right;
+            }
+            .text {
+                font-size: 0.3rem;
+                line-height: 1.38em;
+            }
+        }
+        .bigImg {
+            width: 100%;
+            margin-top: 0.2rem;
+            img {
+                width: 100%;
+            }
+        }
+        .proCity {
+            text-align: center;
+            li {
+                a {
+                    display: block;
+                    width: 2.75rem;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    margin: 0 auto;
+                    border-bottom: 1px dashed @mmColor;
+                    span {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        text-align: left;
+                        strong {
+                            color: @mmColor;
+                            float: right;
+                            margin-left: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .toBuy {
+            width: 100%;
+            height: 0.6rem;
+            padding: 0 0.2rem;
+            margin-top: 0.2rem;
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 0.2rem;
+                font-size: 0.3rem;
+                line-height: 0.6rem;
+                color: #fff;
+                text-align: center;
+                background-color: @mmColor;
+            }
+        }
+        .code {
+            width: 100%;
+            margin-top: 0.9rem;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .comment {
+            width: 100%;
+            margin-top: 0.6rem;
+            .tit {
+                font-size: 0.34rem;
+                line-height: 1.38em;
+            }
+            .form {
+                margin-top: 0.25rem;
+                border: 2px solid #ccc;
+                textarea {
+                    height: 1.5rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border: none;
+                }
+                .ctrl {
+                    overflow: hidden;
+                    background-color: #ccc;
+                    input {
+                        width: 2rem;
+                        border: none;
+                        line-height: 0.7rem;
+                        display: block;
+                        float: right;
+                        background-color: @mmColor;
+                        font-size: 34px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+            }
+            #newcomment {
+                margin-top: 0.2rem;
+            }
+            ul {
+                li {
+                    overflow: hidden;
+                    .userimg {
+                        float: left;
+                        img {
+                            display: block;
+                            width: 0.4rem;
+                            height: 0.4rem;
+                            border-radius: 50%;
+                        }
+                    }
+                    .con {
+                        padding: 0.1rem;
+                        overflow: hidden;
+                        .name {
+                            font-size: 0.3rem;
+                            line-height: 1.38em;
+                            overflow: hidden;
+                            .username {
+                                float: left;
+                                color: blue;
+                            }
+                            .time {
+                                float: right;
+                            }
+                        }
+                        .content {
+                            font-size: 0.3rem;
+                            line-height: 1.38em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

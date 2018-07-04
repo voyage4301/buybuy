@@ -34,24 +34,6 @@
                 <div class="itemsInfo">
                     <ul>
                         <!-- 动态渲染 -->
-                        <!-- <li>
-                            <a class="mui-clearfix" href="">
-                                <div class="itemImg">
-                                    <img src="./images/ic_coudanpin.png" alt="">
-                                </div>
-                                <div class="itemInfo">
-                                    <p>移动端凑单品：海天 鲜味 生抽 1.28L
-                                        <span>10.9元</span>
-                                    </p>
-                                    <p>
-                                        <span>京东商城</span>
-                                        <span>|</span>
-                                        <span>10-25 14:10</span>
-                                        <span class="freeR">1</span>
-                                    </p>
-                                </div>
-                            </a>
-                        </li> -->
                     </ul>
                 </div>
 
@@ -116,7 +98,7 @@
     <script type="text/html" id="moneyctrlList">
         {{ each rows as v i }}
         <li>
-            <a class="mui-clearfix" href="">
+            <a class="mui-clearfix" href="./moneyproduct.html?productid={{ v.productId }}">
                 <div class="itemImg">
                     {{ #v.productImg2 }}
                 </div>

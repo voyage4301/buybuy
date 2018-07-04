@@ -29,4 +29,21 @@ $(function () {
     $('#backTop').on('click', function () {
         mui('.mui-scroll-wrapper').scroll().scrollTo(0, 0, 500); //100毫秒滚动到顶
     })
+
+
 })
+
+// 4.获取传递过来的地址栏信息
+
+function getSearch() {
+    var search = location.search
+    search = decodeURI(search)
+    search = search.slice(1)
+    var sArr = search.split('&')
+    var obj = {}
+    sArr.forEach(function (v, i) {
+        var tempArr = v.split('=')
+        obj[tempArr[0]] = tempArr[1]
+    })
+    return obj
+}

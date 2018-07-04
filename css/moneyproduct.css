@@ -162,3 +162,161 @@ body {
 .container .mm_footer .f_link p:first-child span:last-child {
   color: #000;
 }
+.container .mm_header {
+  height: 1rem;
+}
+.container .mm_header h3 {
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.4rem;
+}
+.container .mm_content {
+  width: 100%;
+  padding: 0.2rem;
+  background-color: #fff;
+}
+.container .mm_content .pro_title {
+  width: 100%;
+  margin-top: 0.1rem;
+  font-size: 0.4rem;
+  text-align: left;
+  line-height: 1.2em;
+}
+.container .mm_content .pro_flag {
+  margin-top: 0.2rem;
+  height: 0.24rem;
+  color: #ccc;
+}
+.container .mm_content .pro_textImg {
+  margin-top: 0.2rem;
+}
+.container .mm_content .pro_textImg .img {
+  float: right;
+}
+.container .mm_content .pro_textImg .text {
+  font-size: 0.3rem;
+  line-height: 1.38em;
+}
+.container .mm_content .bigImg {
+  width: 100%;
+  margin-top: 0.2rem;
+}
+.container .mm_content .bigImg img {
+  width: 100%;
+}
+.container .mm_content .proCity {
+  text-align: center;
+}
+.container .mm_content .proCity li a {
+  display: block;
+  width: 2.75rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin: 0 auto;
+  border-bottom: 1px dashed #FF841D;
+}
+.container .mm_content .proCity li a span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: left;
+}
+.container .mm_content .proCity li a span strong {
+  color: #FF841D;
+  float: right;
+  margin-left: 0.2rem;
+}
+.container .mm_content .toBuy {
+  width: 100%;
+  height: 0.6rem;
+  padding: 0 0.2rem;
+  margin-top: 0.2rem;
+}
+.container .mm_content .toBuy a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  font-size: 0.3rem;
+  line-height: 0.6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #FF841D;
+}
+.container .mm_content .code {
+  width: 100%;
+  margin-top: 0.9rem;
+}
+.container .mm_content .code img {
+  display: block;
+  width: 100%;
+}
+.container .mm_content .comment {
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.container .mm_content .comment .tit {
+  font-size: 0.34rem;
+  line-height: 1.38em;
+}
+.container .mm_content .comment .form {
+  margin-top: 0.25rem;
+  border: 2px solid #ccc;
+}
+.container .mm_content .comment .form textarea {
+  height: 1.5rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+}
+.container .mm_content .comment .form .ctrl {
+  overflow: hidden;
+  background-color: #ccc;
+}
+.container .mm_content .comment .form .ctrl input {
+  width: 2rem;
+  border: none;
+  line-height: 0.7rem;
+  display: block;
+  float: right;
+  background-color: #FF841D;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
+.container .mm_content .comment #newcomment {
+  margin-top: 0.2rem;
+}
+.container .mm_content .comment ul li {
+  overflow: hidden;
+}
+.container .mm_content .comment ul li .userimg {
+  float: left;
+}
+.container .mm_content .comment ul li .userimg img {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+.container .mm_content .comment ul li .con {
+  padding: 0.1rem;
+  overflow: hidden;
+}
+.container .mm_content .comment ul li .con .name {
+  font-size: 0.3rem;
+  line-height: 1.38em;
+  overflow: hidden;
+}
+.container .mm_content .comment ul li .con .name .username {
+  float: left;
+  color: blue;
+}
+.container .mm_content .comment ul li .con .name .time {
+  float: right;
+}
+.container .mm_content .comment ul li .con .content {
+  font-size: 0.3rem;
+  line-height: 1.38em;
+}

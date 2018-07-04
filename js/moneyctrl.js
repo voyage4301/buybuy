@@ -11,7 +11,7 @@ $(function () {
                 pageid: pageid
             },
             success: function (info) {
-                // console.log(info);
+                console.log(info);
                 var arr = info.result
                 var str = ''
                 arr.forEach(function (v, i) {
