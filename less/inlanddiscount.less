@@ -1,0 +1,55 @@
+@import './common.less';
+.container {
+    background-color: #fff;
+    .mm_header {
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_content {
+        ul {
+            width: 100%;
+            li {
+                width: 50%;
+                float: left;
+                padding: 0.1rem;
+                border-right: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                &:nth-child(even) {
+                    border-right: none;
+                }
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    img {
+                        display: block;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                        margin: 0 auto;
+                    }
+                    h4 {
+                        line-height: 1.38em;
+                        margin-top: 0.2rem;
+                        font-size: 0.3rem;
+                    }
+                    .price {
+                        line-height: 1.38em;
+                        margin-top: 0.2rem;
+                        font-size: 0.3rem;
+                        color: @mmColor;
+                    }
+                    .origin {
+                        line-height: 1.38em;
+                        margin-top: 0.2rem;
+                        font-size: 0.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

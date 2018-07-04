@@ -28,6 +28,7 @@ body {
   margin: 0 auto;
   font-size: 12px;
   position: relative;
+  background-color: #fff;
   /* 头部开始 */
   /* 底部开始 */
 }
@@ -36,6 +37,17 @@ body {
   height: 2rem;
   background-color: #FF841D;
   position: relative;
+}
+.container .mm_header .back {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
 }
 .container .mm_header .mm_logo {
   width: 100%;
@@ -122,6 +134,10 @@ body {
   margin-top: 0.5rem;
   border-top: 2px solid #C2C2C2;
   border-bottom: 2px solid #C2C2C2;
+  background-color: #fff;
+}
+.container .mm_footer .f_nav ul {
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_nav ul li {
   width: 30%;
@@ -148,6 +164,7 @@ body {
 }
 .container .mm_footer .f_link {
   margin-top: 30px;
+  background-color: #fff;
 }
 .container .mm_footer .f_link p {
   color: #999;

@@ -1,14 +1,15 @@
 $(function () {
 
+    // 1.渲染
     //1.渲染商品信息
     function renderProduct() {
-        console.log(+getSearch().productid);
+        console.log(getSearch().productid);
 
         $.ajax({
             type: 'get',
-            url: 'http://127.0.0.1:9090/api/getmoneyctrlproduct',
+            url: 'http://127.0.0.1:9090/api/getdiscountproduct',
             data: {
-                productid: +getSearch().productid
+                productid: getSearch().productid
             },
             success: function (info) {
                 console.log(info);
@@ -19,4 +20,5 @@ $(function () {
         })
     }
     renderProduct()
+
 })

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/moneyproduct.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
     <title>买买买</title>
 </head>
 
@@ -27,8 +27,10 @@
                 </div>
 
                 <!-- 商品详细信息 -->
-                <div class="mm_content mui-clearfix">
+                <div class="mm_content">
+                    <ul class="mui-clearfix">
                     <!-- 动态渲染 -->
+                    </ul>
                 </div>
 
 
@@ -69,43 +71,24 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/moneyproduct.js"></script>
+    <script src="./js/inlanddiscount.js"></script>
 
-    <script type="text/html" id="productList">
+    <script type="text/html" id="inlanddiscountList">
         {{ each rows as v i }}
-        <div class="pro_title">{{ v.productName }}</div>
-        <div class="pro_flag">
-            <span>{{ v.productFrom }}</span>
-            <span>{{ v.productTime }}</span>
-            <span>{{ v.productTips }}</span>
-        </div>
-        <div class="pro_textImg">
-            <div class="img">
-                {{ #v.productImgSm }}
-            </div>
-            <div class="text">{{ v.productInfo }}</div>
-        </div>
-        <div class="bigImg">
-            {{ #v.productImg2 }}
-        </div>
-        <div class="proCity">
-            {{ #v.productCity }}
-        </div>
-        <div class="toBuy">
-            <a href="javscript:;">前往购买</a>
-        </div>
-
-        <div class="code">
-            <img src="./images/mmbweixin2.png" alt="">
-        </div>
-
-        <div class="comment">
-            {{ #v.productComment }} {{ /each }}
-        </div>
-
-
+        <li>
+            <a href="./discount.html?productid={{ v.productId }}">
+                {{ #v.productImg }}
+                <h4 class="mui-ellipsis">{{ v.productName }}</h4>
+                <p class="price mui-ellipsis">{{ v.productPrice }}</p>
+                <p class="origin">
+                    <span>{{ v.productFrom }}</span>
+                    <span>|</span>
+                    <span>{{ v.productTime }}</span>
+                </p>
+            </a>
+        </li>
+        {{ /each }}
     </script>
-
 
 </body>
 
