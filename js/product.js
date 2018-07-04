@@ -41,6 +41,8 @@ $(function () {
                 categoryid: categoryId
             },
             success: function (info) {
+                console.log(info);
+                
                 totalPage = Math.ceil(info.totalCount / info.pagesize)
                 var str = ''
                 for (var i = 0; i < totalPage; i++) {

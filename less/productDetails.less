@@ -1,0 +1,135 @@
+@import './common.less';
+.mm_product {
+    .productNav {
+        height: .75rem;
+        border-top: .02rem solid #ccc;
+        border-bottom: .02rem solid #ccc;
+        position: relative;
+        ul {
+            width: 100%;
+            float: left;
+            li {
+                height: 100%;
+                float: left;
+                &:after {
+                    content: '>';
+                }
+                &:last-child:after {
+                    content: '';
+                }
+                a {
+                    line-height: .71rem;
+                    font-size: 0.26rem;
+                }
+            }
+        }
+        .select {
+            width: 1.25rem;
+            height: 0.55rem;
+            position: absolute;
+            top: 0.1rem;
+            right: 0.15rem;
+            border-radius: 0.1rem;
+            line-height: 0.55rem;
+            font-size: 0.26rem;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+        }
+    }
+    .proInfo {
+        width: 100%;
+        background-color: #fff;
+        h3 {
+            margin: 0.4rem 0;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0.2rem auto;
+        }
+        .allImgs {
+            position: relative;
+            .joinCart {
+                width: 0.8rem;
+                height: 0.8rem;
+                display: block;
+                position: absolute;
+                right: 1rem;
+                bottom: 0;
+            }
+        }
+        .tab {
+            width: 100%;
+            height: 0.6rem;
+            a {
+                float: left;
+                display: block;
+                width: 33.33%;
+                height: 0.6rem;
+                line-height: 0.6rem;
+                text-align: center;
+                border-right: 1px solid red;
+                background-color: #FFC831;
+                font-size: 0.3rem;
+                color: #fff;
+                &.current {
+                    background-color: #FF9914;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+        .tips {
+            width: 100%;
+            height: 1.1rem;
+            padding: 0.1rem;
+            font-size: 0.22rem;
+            border-bottom: 0.1rem solid #999;
+        }
+    }
+    .comments {
+        width: 100%;
+        background-color: #fff;
+        .c_title {
+            width: 100%;
+            height: 0.65rem;
+            line-height: 0.65rem;
+            text-align: center;
+            background-color: #ccc;
+            color: #000;
+            font-size: 0.26rem;
+        }
+        ul {
+            width: 100%;
+            li {
+                width: 100%;
+                border-bottom: 0.01rem solid #ccc;
+                .user_time,
+                .origin,
+                .c_content {
+                    padding: 0.1rem;
+                }
+                .user_time {
+                    width: 100%;
+                    height: 0.3rem;
+                    line-height: 0.3rem;
+                    margin-top: 0.3rem;
+                }
+                .origin {
+                    margin-top: 0.1rem;
+                    text-align: right;
+                }
+            }
+        }
+        .showMore {
+            width: 100%;
+            height: 0.95rem; 
+            line-height: 0.95rem;
+            background-color: #E1E1E1;  
+            text-align: center;
+            font-size: 0.30rem;
+        }
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/productDetails.css">
+    <title>买买买</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 头部 -->
+                <div class="mm_header">
+                    <a href="#" class="mm_logo">
+                        <img src="./images/header_logo.png" alt="加载失败" title="慢慢卖">
+                    </a>
+                    <a href="#" class="mm_download">
+                        <img src="./images/header_app.png" alt="加载失败" title="下载">
+                    </a>
+
+                    <div class="mm_search">
+                        <input type="text" name="searchContent" placeholder="请输入搜索内容">
+                        <a href="#" class="search_btn">搜索</a>
+                    </div>
+                </div>
+
+                <!-- 商品详情 -->
+                <div class="mm_product">
+                    <!-- 导航 -->
+                    <div class="productNav">
+                        <ul class="mui-clearfix">
+                            <li>
+                                <a href="./index.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="./category.html">全部分类</a>
+                            </li>
+                        </ul>
+                        <a class="select" href="javascript:;">筛选</a>
+                    </div>
+
+                    <!-- 商品详细 -->
+                    <div class="proInfo">
+                        <!-- 动态渲染 -->
+                    </div>
+
+                    <!-- 网友评论 -->
+                    <div class="comments">
+                        <div class="c_title">网友评价</div>
+                        <ul>
+                            <!-- 动态渲染 -->
+                        </ul>
+                        <div class="showMore">查看更多评论</div>
+                    </div>
+                </div>
+
+
+                <!-- 底部 -->
+                <div class="mm_footer">
+                    <div class="f_nav">
+                        <ul class="mui-clearfix">
+                            <li>
+                                <a href="javascript:;">登录</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">注册</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="backTop">
+                                    <img src="./images/top.jpg" alt=""> 返回顶部
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f_link">
+                        <p>
+                            <span>手机app下载</span>
+                            <span>慢慢买手机版</span>
+                            --掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/productDetails.js"></script>
+
+    <script type="text/html" id="proInfoList">
+        <h3>{{ productName }}</h3>
+        <div class="allImgs">
+            {{ #productImg }}
+            <img class="joinCart" src="./images/gengduo.png" alt="">
+        </div>
+
+        <div class="tab">
+            <a class="current" href="#">比价购买</a>
+            <a href="#">产品参数</a>
+            <a href="#">评价(2322)</a>
+        </div>
+        {{ #bjShop }}
+        <div class="tips">
+            <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+        </div>
+    </script>
+
+    <script type="text/html" id="commentsList">
+        {{ each rows as v i }}
+        <li>
+            <div class="user_time">
+                <span class="user mui-pull-left">{{ v.comName }}</span>
+                <span class="time mui-pull-right">{{ v.comTime }}</span>
+            </div>
+            <div class="origin">{{ v.comFrom }}</div>
+            <div class="c_content"> {{ v.comContent }} </div>
+        </li>
+        {{ /each }}
+    </script>
+
+</body>
+
+</html>

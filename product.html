@@ -41,7 +41,6 @@
                             <li>
                                 <a href="./category.html">全部分类</a>
                             </li>
-
                         </ul>
                         <a class="select" href="javascript:;">筛选</a>
                     </div>
@@ -120,7 +119,7 @@
     <script type="text/html" id="productList">
         {{ each rows as v i }}
         <li class="mui-table-view-cell mui-media">
-            <a href="javascript:;">
+            <a href="./productDetails.html?categoryId={{ v.categoryId }}&brandName={{ v.brandName }}&productId={{ v.productId }}">
                 {{ #v.productImg }}
                 <div class="info_content mui-media-body">
                     <p class="proTitle mui-ellipsis-2">{{ v.productName }}</p>
