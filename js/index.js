@@ -45,10 +45,7 @@ $(function () {
     }
     renderFree()
 
-    //3.返回顶部
-    $('#backTop').on('click', function () {
-        mui('.mui-scroll-wrapper').scroll().scrollTo(0, 0, 500); //100毫秒滚动到顶
-    })
+
 
 
 })

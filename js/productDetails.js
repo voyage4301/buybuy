@@ -16,7 +16,6 @@ $(function () {
     }
 
     var obj = getSearch()
-    console.log(obj);
 
 
     // 1.渲染导航
@@ -37,7 +36,7 @@ $(function () {
     renderNav()
 
 
-    // 2.渲染商品详细信息
+    // 2.渲染商品详细信息和评论
     function renderProduct() {
         $.ajax({
             type: 'get',
@@ -59,7 +58,7 @@ $(function () {
                 productid: obj.productId
             },
             success: function (info) {
-                console.log(info);
+                // console.log(info);
                 $('.comments ul').html(template('commentsList',{rows: info.result}))
 
             }
