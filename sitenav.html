@@ -26,10 +26,17 @@
                 </div>
 
                 <div class="mm_body">
-            
+                    <ul class="mui-clearfix">
+                        <li>
+                            <a href="">
+                                <img src="./images/arrow-right.svg" alt="">
+                                <span>淘宝</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>
-                
+
                 <!-- 底部 -->
                 <div class="mm_footer">
                     <div class="f_nav">
@@ -67,6 +74,21 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/sitenav.js"></script>
+
+
+    <script type="text/html" id="navList">
+        {{ each rows as v i }}
+        <li>
+            <a href="{{ v.navHref }}">
+                <img src="{{ v.navImg }}" alt="">
+                <span>{{ v.navTitle }}</span>
+            </a>
+        </li>
+
+        {{ /each }}
+
+    </script>
 
 
 
