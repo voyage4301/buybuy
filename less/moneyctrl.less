@@ -1,42 +1,53 @@
 @import './common.less';
-.itemsInfo {
-    background-color: #fff;
-    padding: 0.1rem;
-    ul {
-        li {
-            height: 2.6rem;
-            padding: 0.08rem 0.14rem;
-            border-bottom: 0.01rem solid @grayColor;
-            a {
-                display: block;
-                width: 100%;
-                height: 100%;
-                .itemImg {
-                    max-width: 40%;
+.container {
+    .mm_header {
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .itemsInfo {
+        background-color: #fff;
+        padding: 0.1rem;
+        ul {
+            li {
+                height: 2.6rem;
+                padding: 0.08rem 0.14rem;
+                border-bottom: 0.01rem solid @grayColor;
+                a {
+                    display: block;
+                    width: 100%;
                     height: 100%;
-                    float: left;
-                    img {
+                    .itemImg {
+                        max-width: 40%;
                         height: 100%;
-                    }
-                }
-                .itemInfo {
-                    padding-left: 0.1rem;
-                    overflow: hidden;
-                    p {
-                        &:first-child {
-                            font-size: 0.28rem;
-                            height: 2rem;
-                            line-height: 2em;
-                            color: #000;
-                            span {
-                                color: @mmColor;
-                            }
+                        float: left;
+                        img {
+                            height: 100%;
                         }
-                        &:nth-child(2) {
-                            color: #333;
-                            font-size: 0.22rem;
-                            .freeR {
-                                float: right;
+                    }
+                    .itemInfo {
+                        padding-left: 0.1rem;
+                        overflow: hidden;
+                        p {
+                            &:first-child {
+                                font-size: 0.28rem;
+                                height: 2rem;
+                                line-height: 2em;
+                                color: #000;
+                                span {
+                                    color: @mmColor;
+                                }
+                            }
+                            &:nth-child(2) {
+                                color: #333;
+                                font-size: 0.22rem;
+                                .freeR {
+                                    float: right;
+                                }
                             }
                         }
                     }
@@ -44,20 +55,19 @@
             }
         }
     }
-}
-
-.mm_footer {
-    position: relative;
-    .f_paginator {
-        height: 0.9rem;
-    }
-    select {
-        width: 10%;
-        height: .5rem;
-        margin-bottom: 0;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+    .mm_footer {
+        position: relative;
+        .f_paginator {
+            height: 0.9rem;
+        }
+        select {
+            width: 10%;
+            height: .5rem;
+            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

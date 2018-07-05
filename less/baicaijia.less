@@ -1,0 +1,165 @@
+@import './common.less';
+.container {
+    .mm_header {
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_nav {
+        width: 100%;
+        height: 0.8rem;
+        overflow: hidden;
+        position: relative;
+        ul {
+            position: absolute;
+            li {
+                float: left;
+                line-height: 0.65rem;
+                &.current a {
+                    border-bottom: 0.05rem solid red;
+                }
+                a {
+                    display: block;
+                    font-size: 0.26rem;
+                    margin: 0 0.12rem;
+                }
+            }
+        }
+    }
+    .mm_products {
+        width: 100%;
+        ul {
+            width: 100%;
+            li {
+                width: 100%;
+                padding: 0.2rem 0.1rem;
+                border-top: 0.05rem solid #ccc;
+                height: 3rem;
+                position: relative;
+                >a {
+                    display: block;
+                    width: 100%;
+                    height: 45%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                .p_left {
+                    width: 2.55rem;
+                    height: 2.55rem;
+                    float: left;
+                    position: relative;
+                    img {
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        max-width: 2.55rem;
+                    }
+                }
+                .p_right {
+                    height: 100%;
+                    overflow: hidden;
+                    padding-left: 0.2rem;
+                    h3 {
+                        line-height: 1.38em;
+                        font-size: 0.26rem;
+                    }
+                    .price {
+                        margin-top: 0.15rem;
+                        span {
+                            color: red;
+                            font-size: 0.32rem;
+                            em,
+                            del {
+                                margin-left: 0.1rem;
+                                font-size: 0.2rem;
+                            }
+                            del {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                    .bar {
+                        display: block;
+                        width: 100%;
+                        height: 0.3rem;
+                        line-height: 0.3rem;
+                        margin-top: 0.15rem;
+                        position: relative;
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        i {
+                            float: left;
+                            display: block;
+                            width: 1.6rem;
+                            height: 0.3rem;
+                            border-radius: 0.2rem;
+                            border: 0.02rem solid red;
+                            background-color: #FFB7B7;
+                            overflow: hidden;
+                            position: relative;
+                            em {
+                                display: block;
+                                width: 75%;
+                                height: 100%;
+                                background-color: red; // 进度条
+                            }
+                            span {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                color: #fff; // 有文字
+                            }
+                        }
+                        b {
+                            float: left;
+                            margin-left: 0.2rem;
+                            font-size: 0.2rem;
+                            color: red;
+                        }
+                    }
+                    .link {
+                        margin-top: 0.15rem;
+                        width: 100%;
+                        height: 0.6rem;
+                        a {
+                            display: block;
+                            height: 100%;
+                            text-align: center;
+                            line-height: 0.6rem;
+                            font-size: 0.24rem;
+                            &:first-child {
+                                width: 2.1rem;
+                                border: 1px dashed red;
+                                float: left;
+                                color: red;
+                            }
+                            &:last-child {
+                                width: 1.1rem;
+                                border: 0.01rem solid red;
+                                float: right;
+                                color: #fff;
+                                background-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

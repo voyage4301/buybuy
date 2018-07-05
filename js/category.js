@@ -27,7 +27,7 @@ $(function () {
             },
             dataType: 'json',
             success: function (info) {
-                console.log(info);
+                // console.log(info);
                 // 渲染分类
                 $('#firstCategory .category ul').html(template('categoryList', {
                     rows: info.result

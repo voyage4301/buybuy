@@ -1,67 +1,77 @@
 @import './common.less';
-.mm_product {
-    .productNav {
-        height: .75rem;
-        border-top: .02rem solid #ccc;
-        border-bottom: .02rem solid #ccc;
-        position: relative;
-        ul {
-            width: 100%;
-            float: left;
-            li {
-                height: 100%;
-                float: left;
-                &:after {
-                    content: '>';
-                }
-                &:last-child:after {
-                    content: '';
-                }
-                a {
-                    line-height: .71rem;
-                    font-size: 0.26rem;
-                }
-            }
-        }
-        .select {
-            width: 1.25rem;
-            height: 0.55rem;
-            position: absolute;
-            top: 0.1rem;
-            right: 0.15rem;
-            border-radius: 0.1rem;
-            line-height: 0.55rem;
-            font-size: 0.26rem;
+.container {
+    .mm_header {
+        h3 {
+            line-height: 1rem;
             text-align: center;
-            font-weight: bold;
-            box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+            color: #fff;
+            font-size: 0.4rem;
         }
     }
-    .productInfo {
-        ul {
-            width: 100%;
-            li {
+    .mm_product {
+        .productNav {
+            height: .75rem;
+            border-top: .02rem solid #ccc;
+            border-bottom: .02rem solid #ccc;
+            position: relative;
+            ul {
                 width: 100%;
-                height: 2.35rem;
-                a {
-                    display: block;
+                float: left;
+                li {
                     height: 100%;
-                    .info_img {
-                        display: block;
-                        max-width: 1rem;
-                        height: 1rem;
+                    float: left;
+                    &:after {
+                        content: '>';
                     }
-                    .info_content {
+                    &:last-child:after {
+                        content: '';
+                    }
+                    a {
+                        line-height: .71rem;
+                        font-size: 0.26rem;
+                    }
+                }
+            }
+            .select {
+                width: 1.25rem;
+                height: 0.55rem;
+                position: absolute;
+                top: 0.1rem;
+                right: 0.15rem;
+                border-radius: 0.1rem;
+                line-height: 0.55rem;
+                font-size: 0.26rem;
+                text-align: center;
+                font-weight: bold;
+                box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+            }
+        }
+        .productInfo {
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    height: 2.35rem;
+                    a {
+                        display: block;
                         height: 100%;
-                        p {
-                            font-size: 0.32rem;
-                            line-height: 1.2em;
-                            margin-bottom: 0.1rem;
-                            &.proTitle {
-                                color: #000;
-                            }
-                            &.proPrice {
-                                color: red;
+                        .info_img {
+                            display: block;
+                            max-width: 1rem;
+                            height: 1rem;
+                        }
+                        .info_content {
+                            height: 100%;
+                            p {
+                                font-size: 0.32rem;
+                                line-height: 1.2em;
+                                margin-bottom: 0.1rem;
+                                &.proTitle {
+                                    color: #000;
+                                }
+                                &.proPrice {
+                                    color: red;
+                                }
                             }
                         }
                     }
@@ -69,20 +79,19 @@
             }
         }
     }
-}
-
-.mm_footer {
-    position: relative;
-    .f_paginator {
-        height: 0.9rem;
-    }
-    select {
-        width: 10%;
-        height: .5rem;
-        margin-bottom: 0;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
+    .mm_footer {
+        position: relative;
+        .f_paginator {
+            height: 0.9rem;
+        }
+        select {
+            width: 10%;
+            height: .5rem;
+            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
