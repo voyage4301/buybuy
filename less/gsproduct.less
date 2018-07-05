@@ -1,0 +1,113 @@
+@import './common.less';
+.container {
+    .mm_header {
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_body {
+        width: 100%;
+        position: relative;
+        .shop {
+            width: 100%;
+            height: 0.7rem;
+            border-bottom: 2px solid #ccc;
+            ul {
+                height: 100%;
+                li {
+                    width: 33.33%;
+                    height: 100%;
+                    float: left;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        display: block;
+                        span {
+                            line-height: 0.7rem;
+                            font-size: 0.36rem;
+                        }
+                    }
+                }
+            }
+        }
+        .shopSelect {
+            position: absolute;
+            width: 100%;
+            top: 0.7rem;
+            z-index: 999;
+            background-color: #fff;
+            display: none;
+            .shList {
+                width: 100%;
+                height: 0.7rem;
+                border-bottom: 1px solid #000;
+                padding: 0 0.5rem;
+                span {
+                    line-height: 0.7rem;
+                    font-size: 0.36rem;
+                }
+            }
+        }
+        .products {
+            width: 100%;
+            background-color: #ccc;
+            ul {
+                li {
+                    display: block;
+                    width: 50%;
+                    height: 4.6rem;
+                    float: left;
+                    &:nth-child(even) .content {
+                        margin-left: 0;
+                    }
+                    .content {
+                        height: 4.4rem;
+                        margin: 0.1rem;
+                        background-color: #fff;
+                        padding: 0.1rem;
+                        img {
+                            display: block; 
+                            height: 3rem;
+                            // max-width: 3.5rem;
+                            margin: 0 auto;
+                        }
+                        h4 {
+                            margin-top: 0.2rem;
+                            font-size: 0.26rem;
+                            text-align: center;
+                        }
+                        .link {
+                            width: 100%;
+                            margin-top: 0.2rem;
+                            height: 0.55rem;
+                            .price {
+                                height: 100%;
+                                line-height: 0.55rem;
+                                float: left;
+                                font-size: 0.3rem;
+                                color: red;
+                            }
+                            a {
+                                display: block;
+                                width: 1.2rem;
+                                height: 0.55rem;
+                                line-height: 0.55rem;
+                                font-size: 0.26rem;
+                                border-radius: 0.1rem;
+                                background-color: @mmColor;
+                                float: right;
+                                text-align: center;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

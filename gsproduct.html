@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+    <title>买买买</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <!-- 头部 -->
+                <div class="mm_header">
+                    <h3>凑单品</h3>
+                    <a href="javascript:history.go(-1);" class="back mui-icon mui-icon-back">
+                    </a>
+                    <a href="#" class="mm_download">
+                        <img src="./images/header_app.png" alt="加载失败" title="下载">
+                    </a>
+                </div>
+
+                <div class="mm_body">
+                    <!-- 店铺信息 -->
+                    <div class="shop">
+                        <ul class="mui-clearfix">
+                            <li>
+                                <a class="first" data-flag="shop" href="javascsript:;">
+                                    <span>京东</span>
+                                    <span class="mui-icon mui-icon-arrowup"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="first" data-flag="addr" href="javascsript:;">
+                                    <span>华北</span>
+                                    <span class="mui-icon mui-icon-arrowup"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascsript:;">
+                                    <span>全部价格</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- tab栏 -->
+                    <div class="shopSelect">
+                        <div class="shList mui-clearfix">
+                            <span class="mui-pull-left">京东</span>
+                            <span class="mui-pull-right mui-icon"></span>
+                        </div>
+                        <div class="shList mui-clearfix">
+                            <span class="mui-pull-left">京东</span>
+                            <span class="mui-pull-right mui-icon"></span>
+                        </div>
+                        <div class="shList mui-clearfix">
+                            <span class="mui-pull-left">京东</span>
+                            <span class="mui-pull-right mui-icon"></span>
+                        </div>
+                    </div>
+
+                    <!-- 商品 -->
+                    <div class="products">
+                        <ul class="mui-clearfix">
+                            <!-- 动态渲染商品信息 -->
+                        </ul>
+                    </div>
+
+                </div>
+                
+                <!-- 底部 -->
+                <div class="mm_footer">
+                    <div class="f_nav">
+                        <ul class="mui-clearfix">
+                            <li>
+                                <a href="javascript:;">登录</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">注册</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" id="backTop">
+                                    <img src="./images/top.jpg" alt=""> 返回顶部
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f_link">
+                        <p>
+                            <span>手机app下载</span>
+                            <span>慢慢买手机版</span>
+                            --掌上比价平台
+                        </p>
+                        <p>m.manmanbuy.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/gsproduct.js"></script>
+
+
+    <!-- 店铺渲染 -->
+    <script type="text/html" id="shopSelectList">
+        {{ each rows as v i }}
+        <div class="shList mui-clearfix" data-shopid="{{ v.shopId }}">
+            <span class="mui-pull-left">{{ v.shopName }}</span>
+            <span class="seIcon mui-pull-right mui-icon"></span>
+        </div>
+        {{ /each }}
+    </script>
+    <!-- 地域渲染 -->
+    <script type="text/html" id="addrSelectList">
+        {{ each rows as v i }}
+        <div class="shList mui-clearfix" data-areaid="{{ v.areaId }}">
+            <span class="mui-pull-left">{{ v.areaName }}</span>
+            <span class="seIcon mui-pull-right mui-icon"></span>
+        </div>
+        {{ /each }}
+    </script>
+
+    <!-- 商品信息 -->
+
+    <script type="text/html" id="proList">
+        {{ each rows as v i }}
+        <li>
+            <a href="javascript:;"></a>
+            <div class="content">
+                <img src="{{ v.productImg }}" alt="">
+                <h4 class="mui-ellipsis">{{ v.productName }}</h4>
+                <div class="link mui-clearfix">
+                    <span class="price">{{ v.productPrice }}</span>
+                    <a href="#">去凑单</a>
+                </div>
+            </div>
+        </li>
+        {{ /each }}
+    </script>
+
+
+</body>
+
+</html>

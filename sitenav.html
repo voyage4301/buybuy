@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-    <link rel="stylesheet" href="./css/couponproduct.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
     <title>买买买</title>
 </head>
 
@@ -17,7 +17,7 @@
                 <!--这里放置真实显示的DOM内容-->
                 <!-- 头部 -->
                 <div class="mm_header">
-                    <h3>优惠券</h3>
+                    <h3>商场导航</h3>
                     <a href="javascript:history.go(-1);" class="back mui-icon mui-icon-back">
                     </a>
                     <a href="#" class="mm_download">
@@ -26,16 +26,10 @@
                 </div>
 
                 <div class="mm_body">
-                    <!-- 标题信息 -->
-                    <div class="tips">--点餐前出示手机中的优惠券，即可享受优惠--</div>
-                    <div class="items">
-                        <ul>
-                            <!-- 动态渲染 -->
-                        </ul>
-                    </div>
+            
 
                 </div>
-
+                
                 <!-- 底部 -->
                 <div class="mm_footer">
                     <div class="f_nav">
@@ -67,66 +61,15 @@
         </div>
 
     </div>
-    <!-- 模态框 -->
-    <div class="modal">
-        <div class="other">
-
-        </div>
-    </div>
 
 
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/couponproduct.js"></script>
 
-    <!-- 商品模板 -->
-    <script type="text/html" id="itemsList">
-        {{ each rows as v i }}
-        <li>
-            <a href="javascript:;" class="mui-clearfix" data-index="{{ i }}" data-src="{{ #v.couponProductImg }}">
-                <div class="i_left">
-                    {{ #v.couponProductImg }}
-                </div>
-                <div class="i_right">
-                    <h4 class="mui-ellipsis-3">{{ v.couponProductName }}</h4>
-                    <p class="price">{{ v.couponProductPrice }}</p>
-                    <p class="time">{{ v.couponProductTime }}</p>
-                </div>
-            </a>
-        </li>
-        {{ /each }}
 
-    </script>
 
-    <!-- 模态框模板 -->
-    <script type="text/html" id="modalList">
-        <span class="prev"><</span>
-        <span class="last">></span>
-        <div class="mui-slider">
-            <div class="mui-slider-group mui-slider-loop">
-                <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="#">
-                        {{ #last }}
-                    </a>
-                </div>
-                {{ each rows as v i }}
-                <div class="mui-slider-item">
-                    <a href="#">
-                        {{ #v }}
-                    </a>
-                </div>
-                {{ /each }}
-                <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="#">
-                        {{ #first }}
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </script>
 </body>
 
 </html>
