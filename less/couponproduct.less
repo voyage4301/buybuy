@@ -1,0 +1,116 @@
+@import './common.less';
+.container {
+    .mm_header {
+        background-color: #F4483E;
+        height: 1rem;
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_body {
+        width: 100%;
+        .tips {
+            width: 100%;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            text-align: center;
+            color: #ccc;
+        }
+        .items {
+            width: 100%;
+            ul {
+                width: 100%;
+                li {
+                    width: 100%;
+                    height: 2.8rem;
+                    border-bottom: 2px solid #ccc;
+                    padding: 0.2rem;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        .i_left {
+                            // width: 100%;
+                            height: 100%;
+                            float: left;
+                            padding-right: 0.1rem;
+                            img {
+                                display: block;
+                                width: 100%;
+                                max-width: 2rem;
+                                height: 1.6rem;
+                                margin: 0 auto;
+                            }
+                        }
+                        .i_right {
+                            height: 100%;
+                            overflow: hidden;
+                            h4 {
+                                line-height: 1.38em;
+                            }
+                            p {
+                                margin-top: 0.2rem;
+                                font-size: 0.24rem;
+                                &.price {
+                                    color: #000;
+                                    font-weight: bold;
+                                }
+                                &.time {
+                                    margin-top: 0.4rem;
+                                    color: @mmColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .other {
+        background-color: #fff;
+        width: 5rem;
+        height: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%; // z-index: 888;
+        transform: translate(-50%, -50%);
+        img {
+            display: block;
+            width: 100%;
+            max-width: 5rem;
+            margin: 0 auto;
+        }
+        span {
+            display: block;
+            // display: none;
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 1rem;
+            color: #fff;
+            font-size: 0.5rem;
+            z-index: 999;
+            &:nth-child(2) {
+                right: 0;
+            }
+        }
+    }
+}
