@@ -164,11 +164,12 @@ body {
 }
 .container .mm_footer .f_link {
   margin-top: 30px;
-  background-color: #fff;
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_link p {
   color: #999;
   text-align: center;
+  line-height: 1.38em;
 }
 .container .mm_footer .f_link p:first-child {
   font-size: 0.24rem;
@@ -178,6 +179,9 @@ body {
 }
 .container .mm_footer .f_link p:first-child span:last-child {
   color: #000;
+}
+.container .mm_footer .f_link p:last-child {
+  margin-top: 0.1rem;
 }
 .container {
   background-color: #fff;
