@@ -22,7 +22,7 @@ $(function () {
                 $('.itemsInfo ul').html(template('moneyctrlList', {
                     rows: arr
                 }))
-                totalPage = Math.ceil(info.totalCount / info.pagesize)
+                totalPage = Math.ceil((info.totalCount - 10) / info.pagesize)
 
                 for (var i = 0; i < totalPage; i++) {
                     str += '<option value="' + (i + 1) + '">' + (i + 1) + '/' + totalPage + '</option>'

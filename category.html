@@ -20,13 +20,13 @@
                     <h3>比价搜索</h3>
                     <a href="javascript:history.go(-1);" class="back mui-icon mui-icon-back">
                     </a>
-                    <a href="#" class="mm_download">
+                    <a href="javascript:;" class="mm_download">
                         <img src="./images/header_app.png" alt="加载失败" title="下载">
                     </a>
 
                     <div class="mm_search">
                         <input type="text" name="searchContent" placeholder="请输入搜索内容">
-                        <a href="#" class="search_btn">搜索</a>
+                        <a href="javascript:;" class="search_btn">搜索</a>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
     <script type="text/html" id="firstList">
         {{ each rows as v i }}
         <li class="mui-table-view-cell mui-collapse">
-            <a class="categoryBtn mui-navigate-right" data-id="{{ v.titleId }}" href="#">{{ v.title }}</a>
+            <a class="categoryBtn mui-navigate-right" data-id="{{ v.titleId }}" href="javascript:;">{{ v.title }}</a>
             <div class="category mui-collapse-content">
                 <ul>
                     <!-- 动态渲染 -->
