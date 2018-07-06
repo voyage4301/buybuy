@@ -48,6 +48,7 @@
                         .i_right {
                             height: 100%;
                             overflow: hidden;
+                            position: relative;
                             h4 {
                                 line-height: 1.38em;
                             }
@@ -59,7 +60,8 @@
                                     font-weight: bold;
                                 }
                                 &.time {
-                                    margin-top: 0.4rem;
+                                    position: absolute;
+                                    bottom: 0.2rem;
                                     color: @mmColor;
                                 }
                             }
@@ -96,7 +98,6 @@
         }
         span {
             display: block;
-            // display: none;
             width: 1rem;
             height: 1rem;
             position: absolute;

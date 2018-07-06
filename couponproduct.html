@@ -69,9 +69,7 @@
     </div>
     <!-- 模态框 -->
     <div class="modal">
-        <div class="other">
-
-        </div>
+        <div class="other"></div>
     </div>
 
 
@@ -85,7 +83,7 @@
     <script type="text/html" id="itemsList">
         {{ each rows as v i }}
         <li>
-            <a href="javascript:;" class="mui-clearfix" data-index="{{ i }}" data-src="{{ #v.couponProductImg }}">
+            <a href="javascript:;" class="mui-clearfix" data-index="{{ i }}" data-src='{{ #v.couponProductImg }}'>
                 <div class="i_left">
                     {{ #v.couponProductImg }}
                 </div>
@@ -97,7 +95,6 @@
             </a>
         </li>
         {{ /each }}
-
     </script>
 
     <!-- 模态框模板 -->
