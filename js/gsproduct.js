@@ -33,7 +33,7 @@ $(function () {
                     rows: info.result
                 }))
                 $('.shopSelect .shList .mui-icon').eq(areaid).addClass('mui-icon-star')
-                
+
             }
         })
     }
@@ -59,7 +59,9 @@ $(function () {
         console.log($span);
 
         if ($span.hasClass('mui-icon-arrowdown')) {
-            $('.shopSelect').stop().slideDown()
+            setTimeout(() => {
+                $('.shopSelect').stop().slideDown()
+            }, 100);
         } else {
             $('.shopSelect').stop().slideUp()
         }

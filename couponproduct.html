@@ -101,27 +101,13 @@
     <script type="text/html" id="modalList">
         <span class="prev"><</span>
         <span class="last">></span>
-        <div class="mui-slider">
-            <div class="mui-slider-group mui-slider-loop">
-                <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="javascript:;">
-                        {{ #last }}
-                    </a>
-                </div>
-                {{ each rows as v i }}
-                <div class="mui-slider-item">
-                    <a href="javascript:;">
-                        {{ #v }}
-                    </a>
-                </div>
-                {{ /each }}
-                <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="javascript:;">
-                        {{ #first }}
-                    </a>
-                </div>
-            </div>
-        </div>
+        <ul>
+            {{ each rows as v i }}
+            <li>
+                {{ #v }}
+            </li>
+            {{ /each }}
+        </ul>
 
     </script>
 </body>

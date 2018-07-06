@@ -224,7 +224,7 @@ body {
   font-size: 0.26rem;
   text-align: center;
   font-weight: bold;
-  box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+  box-shadow: 0rem 0.02rem 0.02rem 0.02rem #999;
 }
 .container .mm_product .productInfo ul {
   width: 100%;

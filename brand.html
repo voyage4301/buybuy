@@ -40,7 +40,6 @@
                                 <a href="./brandTitle.html">全部分类</a>
                             </li>
                         </ul>
-                        <a class="select" href="javascript:;">筛选</a>
                     </div>
                     <!-- 热门品牌 -->
                     <div class="hotPro">
@@ -177,7 +176,10 @@
                 </div>
                 <div class="s_content">
                     <div class="title mui-ellipsis-2">{{ v.productName }}</div>
-                    <div class="price">{{ v.productPrice }}</div>
+                    <div class="price">
+                        <span class="pr">{{ v.productPrice }}</span>
+                        <span class="star"></span>
+                    </div>
                     <div class="other">
                         <span class="wantNum">{{ v.productQuote }}</span>
                         <span class="comm">{{ v.productCom }}</span>
@@ -200,6 +202,7 @@
             <div class="c_content">
                 <div class="user mui-clearfix">
                     <span class="u_name">{{ v.comName }}</span>
+                    <span class="star"></span>
                     <span class="date">{{ v.comTime }}</span>
                 </div>
                 <div class="info">{{ v.comContent }}</div>
