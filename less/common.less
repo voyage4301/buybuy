@@ -171,10 +171,11 @@ body {
         }
         .f_link {
             margin-top: 30px;
-            background-color: #fff;
+            background-color: @grayColor;
             p {
                 color: #999;
                 text-align: center;
+                line-height: 1.38em;
                 &:first-child {
                     font-size: 0.24rem;
                     span:first-child {
@@ -183,6 +184,9 @@ body {
                     span:last-child {
                         color: #000;
                     }
+                }
+                &:last-child {
+                    margin-top: 0.1rem;
                 }
             }
         }

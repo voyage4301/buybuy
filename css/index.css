@@ -28,6 +28,7 @@ body {
   margin: 0 auto;
   font-size: 12px;
   position: relative;
+  background-color: #fff;
   /* 头部开始 */
   /* 底部开始 */
 }
@@ -36,6 +37,17 @@ body {
   height: 2rem;
   background-color: #FF841D;
   position: relative;
+}
+.container .mm_header .back {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
 }
 .container .mm_header .mm_logo {
   width: 100%;
@@ -122,6 +134,10 @@ body {
   margin-top: 0.5rem;
   border-top: 2px solid #C2C2C2;
   border-bottom: 2px solid #C2C2C2;
+  background-color: #fff;
+}
+.container .mm_footer .f_nav ul {
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_nav ul li {
   width: 30%;
@@ -148,10 +164,12 @@ body {
 }
 .container .mm_footer .f_link {
   margin-top: 30px;
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_link p {
   color: #999;
   text-align: center;
+  line-height: 1.38em;
 }
 .container .mm_footer .f_link p:first-child {
   font-size: 0.24rem;
@@ -161,6 +179,9 @@ body {
 }
 .container .mm_footer .f_link p:first-child span:last-child {
   color: #000;
+}
+.container .mm_footer .f_link p:last-child {
+  margin-top: 0.1rem;
 }
 .container {
   /* 导航开始 */
@@ -194,8 +215,8 @@ body {
   font-size: 0.24rem;
   color: #000;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-top: 0.1rem;
+  margin-bottom: 0.25rem;
 }
 .container .mm_forFree {
   background-color: #fff;
@@ -276,4 +297,5 @@ body {
   line-height: 0.65rem;
   font-size: 0.26rem;
   text-align: center;
+  border: 0.02rem solid #ccc;
 }
