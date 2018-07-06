@@ -57,7 +57,10 @@
     }
     .mm_footer {
         position: relative;
+        border-top: 0.01rem solid #ccc;
         .f_paginator {
+            padding-top: 0.2rem;
+            background-color: #fff;
             height: 0.9rem;
         }
         select {
@@ -65,9 +68,12 @@
             height: .5rem;
             margin-bottom: 0;
             position: absolute;
-            top: 0;
+            top: 0.2rem;
             left: 50%;
             transform: translateX(-50%);
+            background-color: @grayColor;
+            /* 重定制mui样式 */
+            border: 1px solid #ccc!important;
         }
     }
 }
