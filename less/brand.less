@@ -1,0 +1,216 @@
+@import './common.less';
+.container {
+    .mm_header {
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_body {
+        .productNav {
+            height: .75rem;
+            border-top: .02rem solid #ccc;
+            border-bottom: .02rem solid #ccc;
+            position: relative;
+            padding-left: 0.2rem;
+            ul {
+                width: 100%;
+                float: left;
+                li {
+                    height: 100%;
+                    float: left;
+                    &:after {
+                        content: '>';
+                    }
+                    &:last-child:after {
+                        content: '';
+                    }
+                    a {
+                        line-height: .71rem;
+                        font-size: 0.26rem;
+                    }
+                }
+            }
+            .select {
+                width: 1.25rem;
+                height: 0.55rem;
+                position: absolute;
+                top: 0.1rem;
+                right: 0.15rem;
+                border-radius: 0.1rem;
+                line-height: 0.55rem;
+                font-size: 0.26rem;
+                text-align: center;
+                font-weight: bold;
+                box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+            }
+        }
+        .proTitle {
+            height: 0.75rem;
+            line-height: 0.7rem;
+            border-bottom: 0.02rem solid #ccc;
+            font-size: 0.26rem;
+            padding-left: 0.2rem;
+            color: #834E17;
+        }
+        .proContent {
+            width: 100%;
+            ul {
+                width: 100%;
+                border-bottom: 0.02rem solid #ccc;
+                li {
+                    width: 100%;
+                    border-bottom: 0.02rem solid #ccc;
+                    padding: 0.2rem;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    &:nth-child(1) .i_left span {
+                        background-color: red;
+                    }
+                    &:nth-child(2) .i_left span {
+                        background-color: #FF9313;
+                    }
+                    &:nth-child(3) .i_left span {
+                        background-color: #8ADF5B;
+                    }
+                    a {
+                        width: 100%;
+                        height: 1.3rem;
+                        display: block;
+                        font-size: 0.34rem;
+                        line-height: 0.6rem;
+                        .i_left {
+                            width: 40px;
+                            height: 100%;
+                            float: left;
+                            span {
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #C9C9C9;
+                                color: #fff;
+                                font-size: 0.2rem;
+                                line-height: 0.4rem;
+                                text-align: center;
+                            }
+                        }
+                        .i_right {
+                            height: 100%;
+                            overflow: hidden;
+                            padding-left: 0.2rem;
+                            h4,
+                            p {
+                                font-size: 0.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .c_title {
+            height: 0.75rem;
+            line-height: 0.7rem;
+            border-top: 0.02rem solid #ccc;
+            border-bottom: 0.02rem solid #ccc;
+            font-size: 0.26rem;
+            padding-left: 0.2rem;
+            color: #834E17;
+        }
+        .comments {
+            width: 100%;
+            padding: 0.3rem; // 80
+            .c_img {
+                height: 1.5rem;
+                margin-top: 0.2rem;
+                img {
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    float: left;
+                }
+                .title {
+                    overflow: hidden;
+                    line-height: 1.38em;
+                    font-size: 0.26rem;
+                    padding-left: 0.4rem;
+                }
+            }
+            .c_content {
+                padding: 0.3rem 0.2rem;
+                border: 1px solid #ccc;
+                .user {
+                    font-size: 0.3rem;
+                    line-height: 1.38em;
+                    .u_name {
+                        color: green;
+                        float: left;
+                    }
+                    .date {
+                        color: #666;
+                        float: right;
+                    }
+                }
+                .info {
+                    line-height: 1.38em;
+                    margin-top: 0.3rem;
+                    font-size: 0.26rem;
+                }
+            }
+        }
+        .salesTitle {
+            height: 0.75rem;
+            line-height: 0.7rem;
+            border-bottom: 0.02rem solid #ccc;
+            font-size: 0.26rem;
+            padding-left: 0.2rem;
+            color: #834E17;
+        }
+        .salePro {
+            ul {
+                li {
+                    width: 100%;
+                    height: 2.35rem;
+                    padding: 0.2rem;
+                    a {
+                        display: block;
+                        .s_img {
+                            width: 2.15rem;
+                            height: 2.15rem;
+                            float: left;
+                            img {
+                                display: block; // width: 2rem;
+                                // height: 2rem;
+                                min-height: 2rem;
+                                margin: 0 auto;
+                            }
+                        }
+                        .s_content {
+                            height: 100%;
+                            overflow: hidden;
+                            font-size: 0.3rem;
+                            padding-left: 0.2rem;
+                            .title {
+                                line-height: 1.38em;
+                            }
+                            .price {
+                                margin-top: 0.2rem;
+                                color: red;
+                            }
+                            .other {
+                                margin-top: 0.2rem;
+                                font-size: 0.22rem;
+                                color: #555;
+                                .comm {
+                                    margin-left: 0.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

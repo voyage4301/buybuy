@@ -1,0 +1,82 @@
+@import './common.less';
+.container {
+    .mm_header {
+        h3 {
+            line-height: 1rem;
+            text-align: center;
+            color: #fff;
+            font-size: 0.4rem;
+        }
+    }
+    .mm_body {
+        .productNav {
+            height: .75rem;
+            border-top: .02rem solid #ccc;
+            border-bottom: .02rem solid #ccc;
+            position: relative;
+            ul {
+                width: 100%;
+                float: left;
+                li {
+                    height: 100%;
+                    float: left;
+                    &:after {
+                        content: '>';
+                    }
+                    &:last-child:after {
+                        content: '';
+                    }
+                    a {
+                        line-height: .71rem;
+                        font-size: 0.26rem;
+                    }
+                }
+            }
+            .select {
+                width: 1.25rem;
+                height: 0.55rem;
+                position: absolute;
+                top: 0.1rem;
+                right: 0.15rem;
+                border-radius: 0.1rem;
+                line-height: 0.55rem;
+                font-size: 0.26rem;
+                text-align: center;
+                font-weight: bold;
+                box-shadow: 0rem 0.02rem 0.02rem 0.02rem #000;
+            }
+        }
+        .proTitle {
+            height: 0.8rem;
+            margin: 0.2rem 0.1rem;
+            border: 1px solid #333;
+            background-color: #ccc;
+            font-size: 0.3rem;
+            padding-top: 0.3rem;
+            padding-left: 0.2rem;
+            color: #834E17;
+        }
+        .proContent {
+            width: 100%;
+            padding: 0.2rem 0.1rem;
+            ul {
+                width: 100%;
+                border-top: 0.02rem solid #ccc;
+                border-bottom: 0.02rem solid #ccc;
+                li {
+                    width: 100%;
+                    border-bottom: 0.02rem solid #ccc;
+                    padding-left: 0.3rem;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    a {
+                        height: 0.8rem;
+                        font-size: 0.34rem;
+                        line-height: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
