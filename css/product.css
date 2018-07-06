@@ -164,11 +164,12 @@ body {
 }
 .container .mm_footer .f_link {
   margin-top: 30px;
-  background-color: #fff;
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_link p {
   color: #999;
   text-align: center;
+  line-height: 1.38em;
 }
 .container .mm_footer .f_link p:first-child {
   font-size: 0.24rem;
@@ -178,6 +179,9 @@ body {
 }
 .container .mm_footer .f_link p:first-child span:last-child {
   color: #000;
+}
+.container .mm_footer .f_link p:last-child {
+  margin-top: 0.1rem;
 }
 .container .mm_header h3 {
   line-height: 1rem;
@@ -253,17 +257,26 @@ body {
   color: red;
 }
 .container .mm_footer {
+  border-top: 0.01rem solid #ccc;
   position: relative;
 }
 .container .mm_footer .f_paginator {
+  padding-top: 0.2rem;
+  background-color: #fff;
   height: 0.9rem;
+}
+.container .mm_footer .f_paginator a {
+  background-color: #F1F1F1;
 }
 .container .mm_footer select {
   width: 10%;
   height: .5rem;
   margin-bottom: 0;
   position: absolute;
-  top: 0;
+  top: 0.2rem;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #F1F1F1;
+  /* 重定制mui样式 */
+  border: 1px solid #ccc!important;
 }

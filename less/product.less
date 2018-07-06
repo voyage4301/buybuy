@@ -80,18 +80,27 @@
         }
     }
     .mm_footer {
+        border-top: 0.01rem solid #ccc;
         position: relative;
         .f_paginator {
+            padding-top: 0.2rem;
+            background-color: #fff;
             height: 0.9rem;
+            a {
+                background-color: @grayColor;
+            }
         }
         select {
             width: 10%;
             height: .5rem;
             margin-bottom: 0;
             position: absolute;
-            top: 0;
+            top: 0.2rem;
             left: 50%;
             transform: translateX(-50%);
+            background-color: @grayColor;
+            /* 重定制mui样式 */
+            border: 1px solid #ccc!important;
         }
     }
 }
