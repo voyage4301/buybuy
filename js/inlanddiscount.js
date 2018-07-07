@@ -1,7 +1,7 @@
 $(function () {
 
     var datas = []
-    var pageSize = 8,
+    var pageSize = 6,
         start = 0
 
 
@@ -27,7 +27,7 @@ $(function () {
                     }))
                     start += pageSize
                     flag = true
-                }, 1500);
+                }, 1000);
             }
         })
     }

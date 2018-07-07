@@ -88,7 +88,7 @@
                     {{ #v.couponProductImg }}
                 </div>
                 <div class="i_right">
-                    <h4 class="mui-ellipsis-3">{{ v.couponProductName }}</h4>
+                    <h4 class="mui-ellipsis-2">{{ v.couponProductName }}</h4>
                     <p class="price">{{ v.couponProductPrice }}</p>
                     <p class="time">{{ v.couponProductTime }}</p>
                 </div>
@@ -103,7 +103,7 @@
         <span class="last">></span>
         <ul>
             {{ each rows as v i }}
-            <li>
+            <li data-index="{{ i }}">
                 {{ #v }}
             </li>
             {{ /each }}

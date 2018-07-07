@@ -44,6 +44,7 @@ $(function () {
                 $('.mm_products ul').html(template('productList', {
                     rows: info.result
                 }))
+                $('.mm_products ul li>a').text('')
             }
         })
     }

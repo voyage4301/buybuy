@@ -16,6 +16,15 @@ p {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   height: 100%;
@@ -28,6 +37,8 @@ body {
   margin: 0 auto;
   font-size: 12px;
   position: relative;
+  top: 0;
+  left: 0;
   background-color: #fff;
   /* 头部开始 */
   /* 底部开始 */
@@ -256,6 +267,13 @@ body {
 .container .mm_product .productInfo ul li a .info_content p.proPrice {
   color: red;
 }
+.container .mm_product .productInfo ul li a .info_content p.proOther {
+  margin-bottom: 0;
+}
+.container .mm_product .productInfo ul li a .info_content p.proOther span {
+  height: 100%;
+  line-height: 1.38em;
+}
 .container .mm_footer {
   border-top: 0.01rem solid #ccc;
   position: relative;
@@ -278,5 +296,5 @@ body {
   transform: translateX(-50%);
   background-color: #F1F1F1;
   /* 重定制mui样式 */
-  border: 1px solid #ccc!important;
+  border: 1px solid #ccc !important;
 }

@@ -16,6 +16,15 @@ p {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   height: 100%;
@@ -28,6 +37,9 @@ body {
   margin: 0 auto;
   font-size: 12px;
   position: relative;
+  top: 0;
+  left: 0;
+  background-color: #fff;
   /* 头部开始 */
   /* 底部开始 */
 }
@@ -133,6 +145,10 @@ body {
   margin-top: 0.5rem;
   border-top: 2px solid #C2C2C2;
   border-bottom: 2px solid #C2C2C2;
+  background-color: #fff;
+}
+.container .mm_footer .f_nav ul {
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_nav ul li {
   width: 30%;
@@ -159,10 +175,12 @@ body {
 }
 .container .mm_footer .f_link {
   margin-top: 30px;
+  background-color: #F1F1F1;
 }
 .container .mm_footer .f_link p {
   color: #999;
   text-align: center;
+  line-height: 1.38em;
 }
 .container .mm_footer .f_link p:first-child {
   font-size: 0.24rem;
@@ -172,6 +190,9 @@ body {
 }
 .container .mm_footer .f_link p:first-child span:last-child {
   color: #000;
+}
+.container .mm_footer .f_link p:last-child {
+  margin-top: 0.1rem;
 }
 .container .mm_header {
   height: 1rem;
@@ -195,6 +216,7 @@ body {
   line-height: 1.2em;
 }
 .container .mm_content .pro_flag {
+  font-size: 0.24rem;
   margin-top: 0.2rem;
   height: 0.24rem;
   color: #ccc;
@@ -300,6 +322,7 @@ body {
   margin-top: 0.2rem;
 }
 .container .mm_content .comment ul li {
+  margin-top: 0.2rem;
   overflow: hidden;
 }
 .container .mm_content .comment ul li .userimg {
